@@ -1,0 +1,118 @@
+/* <--- CardHeader Style ---> */
+
+.card-header {
+  width: 100%;
+  position: relative;
+  /* background-color: red; */
+}
+
+.header-background {
+  background: #444;
+  background-size: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  width: 100%;
+  height: 35%;
+  position: relative;
+}
+
+.header-background img {
+  width: 100%;
+  max-height: 170px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+.background-text {
+  color: #fffffe;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 15px;
+}
+
+.background-text p {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.header-content {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  /* background-color: red; */
+}
+
+.profile-img {
+  background-color: #000;
+  background-size: cover;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  top: -85px;
+  margin: 0 auto;
+  margin-bottom: -80px;
+  text-align: center;
+  position: relative;
+}
+
+.profile-img img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.header-content h1 {
+  color: #555;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  margin: 0;
+}
+
+.header-content h2 {
+  color: #888;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.header-content p {
+  color: #888;
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+  display: block;
+  padding-bottom: 40px;
+}
+
+.contact-btn {
+  background-color: #ffbe44;
+  border-radius: 25px;
+  border: none;
+  color: #c63535;
+  bottom: 0;
+  right: 50%;
+  width: 200px;
+  height: 48px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: -24px;
+  margin-right: -100px;
+  position: absolute;
+}
+
+.contact-btn:hover {
+  background-color: #c63535;
+  color: #ffbe44;
+}
