@@ -1,0 +1,31 @@
+/* <--- ServiceBack ---> */
+
+.service-back {
+    background-color: #4EEDC4;
+    box-shadow: 0 0 20px rgb(28, 199, 151, 0.25);
+    border-radius: 5px;
+    color: #0f365b;
+    cursor: pointer;
+    text-align: center;
+    min-height: 137px;
+    padding: 10px 5px;
+    margin: 20px;
+    transition: all 0.4s ease;
+    position: relative;
+  }
+
+.service-back h4 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all 0.4s ease;
+    position: relative;
+  }
+
+.service-back p {
+    position: relative;
+    color: #20496B;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+  }

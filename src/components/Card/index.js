@@ -1,3 +1,4 @@
+import CardBody from '../CardBody'
 import CardHeader from '../CardHeader'
 import './style.css'
 
@@ -5,7 +6,7 @@ export default function Card() {
     return (
         <div className='card'>
             <CardHeader/>
-            <section className='card-body'></section>
+            <CardBody />
             <section className='card-footer'></section>
         </div>
     )

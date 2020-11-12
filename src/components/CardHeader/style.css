@@ -7,7 +7,7 @@
 }
 
 .header-background {
-  background: #444;
+  background-color: #1CC797;
   background-size: cover;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
@@ -22,6 +22,7 @@
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
 }
+
 .background-text {
   color: #fffffe;
   text-align: center;
@@ -37,9 +38,12 @@
 }
 
 .background-text p {
+  /* display: none; */
+  margin-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 .header-content {
@@ -50,15 +54,16 @@
 }
 
 .profile-img {
-  background-color: #000;
+  /* box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5); */
+  background-color: #141837;
   background-size: cover;
-  border: 10px solid #fff;
+  border: 8px solid #fff;
   border-radius: 50%;
-  width: 180px;
-  height: 180px;
-  top: -85px;
+  width: 160px;
+  height: 160px;
   margin: 0 auto;
   margin-bottom: -80px;
+  transform: translateY(-50%);
   text-align: center;
   position: relative;
 }
@@ -70,49 +75,77 @@
 }
 
 .header-content h1 {
-  color: #555;
+  color: #20496B;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   position: relative;
   margin: 0;
 }
 
 .header-content h2 {
-  color: #888;
-  font-weight: 500;
-  font-size: 16px;
+  color:#4F89A6;
+  font-weight: 400;
+  font-size: 15px;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .header-content p {
-  color: #888;
-  font-weight: 400;
-  font-size: 16px;
+  color: #20496B;
+  font-weight: 500;
+  font-size: 13px;
   position: relative;
   display: block;
-  padding-bottom: 40px;
+}
+
+.social-links {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.social-links a {
+  border: 1px solid #20496B;
+  color: #20496B;
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  margin: 0 5px;
+  line-height: 35px;
+  text-align: center;
+  transition: all .3s ease;
+}
+
+.social-links a i {
+  transition: all .3s ease;
+}
+
+.social-links a:hover {
+  color: #1CC797;
+  background-color: #20496B;
 }
 
 .contact-btn {
-  background-color: #ffbe44;
+  background-color: #1CC797;
   border-radius: 25px;
+  color: #0F365B;
+  cursor: pointer;
   border: none;
-  color: #c63535;
   bottom: 0;
   right: 50%;
   width: 200px;
   height: 48px;
   font-size: 16px;
+  font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: -24px;
   margin-right: -100px;
   position: absolute;
+  transition: all .3s;
+  z-index: 10;
 }
-
 .contact-btn:hover {
-  background-color: #c63535;
-  color: #ffbe44;
+  transform: scale(1.05);
 }

@@ -1,0 +1,68 @@
+/* <--- ServiceFront ---> */
+
+.service-front {
+  background-color: #20496b;
+  /* box-shadow: 0 0 20px rgb(28, 199, 151, 0.25); */
+  border-radius: 5px;
+  cursor: pointer;
+  color: #4eedc4;
+  /* min-height: 137px; */
+  padding: 10px 5px;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.service-front::before {
+  content: '';
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #4eedc4;
+  transform: scaleX(0);
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  transition-duration: 0.5s;
+  transform-origin: 0 0;
+  position: absolute;
+}
+
+.service-front:hover::before {
+  border-radius: 5px;
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+.service-front:hover .icon i,
+.service-front:hover h4 {
+  color: #0f365b;
+}
+
+.service-front .icon {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: block;
+  margin: 0 auto 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.service-front .icon i {
+  font-size: 40px;
+  line-height: 60px;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.service-front h4 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all 0.4s ease;
+    position: relative;
+  }

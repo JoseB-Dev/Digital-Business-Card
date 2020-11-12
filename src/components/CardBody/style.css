@@ -1,0 +1,130 @@
+/* <--- Card Body ---> */
+
+.card-body {
+  width: 100%;
+  position: relative;
+}
+
+.section {
+  /* background-color: #000; */
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.section .title-section {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.section .text-section {
+  color: #4f89a6;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.services {
+  background-color: #0f365b;
+  position: relative;
+}
+
+
+
+.service-item {
+  background-color: #20496b;
+  box-shadow: 0 0 20px rgb(28, 199, 151, 0.25);
+  border-radius: 5px;
+  color: #4eedc4;
+  cursor: pointer;
+  text-align: center;
+  min-height: 137px;
+  padding: 10px 5px;
+  margin: 20px;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.service-item.front::before {
+  content: '';
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #4eedc4;
+  transform: scaleY(0);
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  transition-duration: 0.5s;
+  transform-origin: 50% 0;
+  position: absolute;
+}
+
+.service-item.front:hover::before {
+  border-radius: 5px;
+  transform: scaleY(1);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* .service-item:hover {
+    background-color: #4eedc4;
+    color: #20496b;
+} */
+
+.service-item .icon {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: block;
+  margin: 0 auto 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.service-item .icon .fas {
+  font-size: 40px;
+  line-height: 60px;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.service-item.front:hover .icon .fas,
+.service-item.front:hover h4 {
+  color: #0f365b;
+}
+
+.service-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.service-item.back {
+    position: relative;
+  background-color: #4EEDC4;
+}
+
+.service-item.back h4 {
+  color: #0f365b;
+  position: relative;
+}
+.service-item.back p {
+  position: relative;
+  color: #20496B;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.location {
+}
+
+.qr-code {
+}

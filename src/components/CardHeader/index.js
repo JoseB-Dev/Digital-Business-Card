@@ -5,7 +5,7 @@ import background from '../../img/banner.jpg'
     https://media.giphy.com/media/DvyxIpxw9cCuQ/giphy.gif
     https://media.giphy.com/media/njZPp4pQ0g4fe/giphy.gif
     https://media.giphy.com/media/iicDrNGWxHmDrIni6j/giphy.gif
-    
+    https://media.giphy.com/media/l3vRnoppYtfEbemBO/giphy.gif
     */
 export default function CardHeader() {
     return (
@@ -15,7 +15,7 @@ export default function CardHeader() {
                     <p>Community Cyber Space</p>
                     <p>C.C.S</p>
                 </div>
-                <img src={'https://media.giphy.com/media/njZPp4pQ0g4fe/giphy.gif'} alt='profile img' />
+                <img src={'https://media.giphy.com/media/l3vRnoppYtfEbemBO/giphy.gif'} alt='profile img' />
             </div>
             <div className='header-content'>
                 <div className='profile-img'>
@@ -24,7 +24,12 @@ export default function CardHeader() {
                 <h1>Jose Luis Bravo</h1>
                 <h2>Consultor Informático</h2>
                 <p>🇵🇪 Perú</p>
-                <button className='contact-btn'>Contacto</button>
+                <div className="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <button className='contact-btn'>Contáctame</button>
             </div>
         </div>
     )
