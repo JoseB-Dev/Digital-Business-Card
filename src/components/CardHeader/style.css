@@ -124,28 +124,3 @@
   color: #1CC797;
   background-color: #20496B;
 }
-
-.contact-btn {
-  background-color: #1CC797;
-  border-radius: 25px;
-  color: #0F365B;
-  cursor: pointer;
-  border: none;
-  bottom: 0;
-  right: 50%;
-  width: 200px;
-  height: 48px;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: -24px;
-  margin-right: -100px;
-  position: absolute;
-  transition: all .3s;
-  z-index: 10;
-}
-.contact-btn:hover {
-  transform: scale(1.05);
-}

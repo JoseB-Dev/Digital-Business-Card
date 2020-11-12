@@ -1,6 +1,7 @@
 import './style.css'
 import profile from '../../img/perfil.png'
 import background from '../../img/banner.jpg'
+import {Contact } from '../Contact'
 /* 
     https://media.giphy.com/media/DvyxIpxw9cCuQ/giphy.gif
     https://media.giphy.com/media/njZPp4pQ0g4fe/giphy.gif
@@ -25,11 +26,11 @@ export default function CardHeader() {
                 <h2>Consultor Informático</h2>
                 <p>🇵🇪 Perú</p>
                 <div className="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i className="fab fa-facebook-f"></i></a>
+                        <a href="#"><i className="fab fa-youtube"></i></a>
+                        <a href="#"><i className="fab fa-twitter"></i></a>
                 </div>
-                <button className='contact-btn'>Contáctame</button>
+                <Contact/>
             </div>
         </div>
     )
