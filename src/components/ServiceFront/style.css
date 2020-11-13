@@ -2,43 +2,19 @@
 
 .service-front {
   background-color: #20496b;
-  /* box-shadow: 0 0 20px rgb(28, 199, 151, 0.25); */
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  color: #4eedc4;
+  color: #3ADCE2;
   min-height: 137px;
   padding: 10px 5px;
-  margin: 20px;
+  margin-bottom: 20px;
   text-align: center;
   transition: all 0.4s ease;
   position: relative;
 }
 
-.service-front::before {
-  content: '';
-  border-radius: 5px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #4eedc4;
-  transform: scaleX(0);
-  transition-property: transform;
-  transition-timing-function: ease-out;
-  transition-duration: 0.5s;
-  transform-origin: 0 0;
-  position: absolute;
-}
-
-.service-front:hover::before {
-  border-radius: 5px;
-  transform: scaleX(1);
-  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-}
-
-.service-front:hover .icon i,
-.service-front:hover h4 {
-  color: #0f365b;
+.service-front:hover {
+  box-shadow: 0 0 20px rgb(58, 220, 226,.65)
 }
 
 .service-front .icon {
@@ -60,9 +36,9 @@
 }
 
 .service-front h4 {
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: capitalize;
-    transition: all 0.4s ease;
-    position: relative;
-  }
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  transition: all 0.4s ease;
+  position: relative;
+}

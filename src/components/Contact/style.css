@@ -1,10 +1,13 @@
 /* <--- Contact ---> */
 :root {
   /* Contact Colors */
-  --whatsapp: #075e54;
-  --messenger: #00b2ff;
+  --whatsapp1: #25d366;
+  --whatsapp2: #128c7e;
+  --messenger1: #00b2ff;
+  --messenger2: #006aff;
   /* 0084ff */
-  --gmail: #db4a39;
+  --email1: #ea4335;
+  --email2: #bb001b;
   /* EA4335 */
 }
 
@@ -14,66 +17,65 @@
 }
 
 .contact-btn {
-    background-color: #1CC797;
-    border-radius: 25px;
-    color: #20496B;
-    cursor: pointer;
-    border: none;
-    bottom: 0;
-    right: 50%;
-    width: 200px;
-    height: 48px;
-    margin-bottom: -24px;
-    margin-right: -100px;
-    position: absolute;
-    transition: all .4s;
-    transition-delay: .1s;
-    overflow: hidden;
-    z-index: 10;
-  }
+  background-color: #4EEDC4;
+  border-radius: 25px;
+  color: #20496b;
+  cursor: pointer;
+  border: none;
+  bottom: 0;
+  right: 50%;
+  width: 200px;
+  height: 48px;
+  margin-bottom: -24px;
+  margin-right: -100px;
+  position: absolute;
+  transition: all 0.4s;
+  transition-delay: 0.1s;
+  overflow: hidden;
+  z-index: 10;
+}
 
-  .contact-btn:hover {
-    transform: scale(1.05);
-  }
+.contact-btn:hover {
+  transform: scale(1.05);
+}
 
-  .contact-btn.active {
-    /* background-color:#20496B;
+.contact-btn.active {
+  /* background-color:#20496B;
     color:#1CC797; */
-    margin-right: 0;
-    right: 20px;
-    width: 65px;
-    height: 65px;
-    margin-bottom: -32.5px;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    border-radius: 65px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  }
+  margin-right: 0;
+  right: 20px;
+  width: 65px;
+  height: 65px;
+  margin-bottom: -32.5px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 65px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
 
-  .contact-btn span {
-    opacity: 1;
-    display: block;
-    float: left;
-    width: 200px;
-    padding: 15px 0;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
-    transition: opacity 0.2s;
-    transition-delay: 0.4s;
-    letter-spacing: 0.5px;
-  }
-  
-  .contact-btn.active span {
-    opacity: 0;
-    transition-delay: 0s;
-    width: 200px;
-  }
+.contact-btn span {
+  opacity: 1;
+  display: block;
+  float: left;
+  width: 200px;
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+  transition-delay: 0.4s;
+  letter-spacing: 0.5px;
+}
 
+.contact-btn.active span {
+  opacity: 0;
+  transition-delay: 0s;
+  width: 200px;
+}
 
-.contact-btn svg {
+.contact-btn img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -82,19 +84,13 @@
   transition: all 0.4s;
 }
 
-.contact-btn svg path {
-  fill: #20496B;
-    /* fill: #1CC797; */
-}
-
-.contact-btn.active svg {
+.contact-btn.active img {
   opacity: 1;
   transition-delay: 0.5s;
 }
 
-
 .contact-title {
-  background-color:#20496B;
+  background-color: #20496b;
   width: 100%;
   max-height: 0px;
   float: left;
@@ -128,7 +124,7 @@
 
 .contact-list {
   text-align: left;
-  background-color:#e6e6e6;
+  background-color: #e6e6e6;
   /* float: left; */
   width: 100%;
   overflow: hidden;
@@ -140,7 +136,7 @@
 .contact-list.active {
   max-height: 600px;
   padding: 12px 20px 30px 20px;
-  transition: all 1.5s;
+  transition: all 1s;
 }
 
 .contact-list.active a {
@@ -165,9 +161,9 @@
 .contact-list a {
   float: left;
   width: 100%;
-  margin-top:18px;
+  margin-top: 18px;
   background-color: var(--background);
-  padding: 10px ;
+  padding: 10px;
   border: transparent;
   border-radius: 10px;
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
@@ -177,12 +173,6 @@
   transform: translateY(-10px);
   position: relative;
 }
-
-/* @media (min-width: 414px) {
-  .contact-list a {
-    padding: 18px 30px;
-  }
-} */
 
 .contact-list a .arrow {
   position: absolute;
@@ -196,32 +186,48 @@
   transform: translateY(-50%);
 }
 
-.contact-list a .arrow path {
-  fill: #e6e6e6;
-}
-
-.contact-list a.whatsapp .icon svg {
-  background-color: var(--whatsapp);
+.contact-list a.whatsapp .icon img {
+  background: linear-gradient(
+    to bottom left,
+    var(--whatsapp1),
+    var(--whatsapp2)
+  );
 }
 
 .contact-list a.whatsapp .content h1 {
-  color: var(--whatsapp);
+  background: linear-gradient(var(--whatsapp1), var(--whatsapp2));
+  background-clip: text;
+  color: transparent;
 }
 
-.contact-list a.messenger .icon svg {
-  background-color: var(--messenger);
+.contact-list a.messenger .icon img {
+  background: linear-gradient(var(--messenger1), var(--messenger2));
 }
 
 .contact-list a.messenger .content h1 {
-  color: var(--messenger);
+  background: linear-gradient(var(--messenger1), var(--messenger2));
+  background-clip: text;
+  color: transparent;
 }
 
-.contact-list a.gmail .icon svg {
-  background-color: var(--gmail);
+.contact-list a.gmail .icon img {
+  background: linear-gradient(
+    var(--email1),
+    var(--email1),
+    var(--email1),
+    var(--email2)
+  );
 }
 
 .contact-list a.gmail .content h1 {
-  color: var(--gmail);
+  background: linear-gradient(
+    var(--email1),
+    var(--email1),
+    var(--email1),
+    var(--email2)
+  );
+  background-clip: text;
+  color: transparent;
 }
 
 .contact-list a .icon {
@@ -230,17 +236,13 @@
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
-.contact-list a .icon svg {
+.contact-list a .icon img {
   width: 100%;
   height: 100%;
   padding: 8px;
-}
-
-.contact-list a .icon svg path {
-  fill: #ffffff;
 }
 
 .contact-list a .content h1 {
@@ -248,6 +250,7 @@
   font-weight: 400;
   line-height: 160%;
   letter-spacing: 0.4px;
+  margin: 0;
 }
 
 .contact-list a .content span {
