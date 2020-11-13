@@ -4,7 +4,7 @@ import qr_code from '../../img/qrcode.svg'
 import './style.css'
 
 export default function QRCodeSection() {
-    const [state, setstate] = useState({
+    const [state] = useState({
         title: 'Codigo QR',
         text: 'Comparte mi tarjeta',
         styles: 'qr-code'

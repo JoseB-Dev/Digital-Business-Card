@@ -6,7 +6,7 @@ import email from '../../img/email.svg'
 import arrow_right from '../../img/arrow_right.svg'
 import arrow_top from '../../img/arrow_top.svg'
 
-export const Contact = () => {
+export default function Contact() {
   const [state, setstate] = useState(false)
   const handleClick = () => {
     setstate(!state)
@@ -19,7 +19,7 @@ export const Contact = () => {
           className={state ? 'contact-btn active' : 'contact-btn'}
         >
           <span>Contacto</span>
-          <img src={arrow_top} />
+          <img src={arrow_top} alt='arrow top' />
         </button>
 
         <div className={state ? 'contact-title active' : 'contact-title'}>
@@ -36,7 +36,6 @@ export const Contact = () => {
         >
           <div className='icon'>
             <img src={whatsapp} alt='whatsapp logo' />
-
           </div>
 
           <div className='content'>
@@ -63,7 +62,6 @@ export const Contact = () => {
           </div>
 
           <img className='arrow' src={arrow_right} alt='arrow right' />
-
         </a>
 
         <a

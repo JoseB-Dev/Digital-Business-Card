@@ -1,11 +1,10 @@
-
+/* <--- Section Style ---> */
 .section {
     font-family: 'Lato', sans-serif;
     text-align: center;
     width: 100%;
     padding: 30px 20px;
     position: relative;
-    min-height: 614px;
   }
   
 .title-section {

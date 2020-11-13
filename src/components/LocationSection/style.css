@@ -1,4 +1,4 @@
-
+/* <--- LocationSection Style ---> */
 .location {
     background-color: #20496b;
     position: relative;
@@ -36,7 +36,7 @@
   
   .box-map {
     border-radius: 5px;
-    height: 250px;
+    height: 350px;
   }
   
   .iframe-map {

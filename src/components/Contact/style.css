@@ -1,4 +1,4 @@
-/* <--- Contact ---> */
+/* <--- Contact Style ---> */
 :root {
   /* Contact Colors */
   --whatsapp1: #25d366;
@@ -124,7 +124,7 @@
 
 .contact-list {
   text-align: left;
-  background-color: #e6e6e6;
+  background-color: #E9EBED;
   /* float: left; */
   width: 100%;
   overflow: hidden;
@@ -162,7 +162,6 @@
   float: left;
   width: 100%;
   margin-top: 18px;
-  background-color: var(--background);
   padding: 10px;
   border: transparent;
   border-radius: 10px;
@@ -255,7 +254,7 @@
 
 .contact-list a .content span {
   font-size: 14px;
-  color: #b3b3b3;
+  color: #827F7B;
   display: block;
   letter-spacing: 0.4px;
 }

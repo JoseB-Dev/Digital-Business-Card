@@ -1,4 +1,6 @@
+import React from 'react'
 import './style.css'
+
 export default function ServiceBack({ click, title, text }) {
     return (
         <div className='service-back' onClick={click}>
