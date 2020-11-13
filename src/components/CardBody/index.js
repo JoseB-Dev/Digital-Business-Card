@@ -8,7 +8,7 @@ import './style.css'
 export default function CardBody() {
     return (
         <section className='card-body'>
-            <Carousel dynamicHeight={true} showThumbs={false} showStatus={false}>
+            <Carousel dynamicHeight={true} showThumbs={false} showStatus={false} useKeyboardArrows={true}>
                 <ServicesSection />
                 <LocationSection />
                 <QRCodeSection />
