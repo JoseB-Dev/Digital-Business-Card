@@ -1,6 +1,6 @@
 import './style.css'
 import ListOfServices from '../LisOfServices'
-import qr_code from '../../img/QR_Code.svg'
+import qr_code from '../../img/qrcode.svg'
 
 export default function CardBody() {
     return (
@@ -37,13 +37,11 @@ export default function CardBody() {
 
             <div className='qr-code section'>
                 <h3 className='title-section'>Codigo QR</h3>
-                <p className='text-section'>Visita mi sitio web</p>
+                <p className='text-section'>Comparte mi tarjeta</p>
                 <div className='qr-code-box'>
                     <div className='box-web'>
-                        <a href='https://community-cyber-space.vercel.app/' target='_blank' rel='noreferrer'>
-                            <i className='far fa-file-code'></i>
-                            <p>Página web</p>
-                        </a>
+                        <i className='fas fa-qrcode'></i>
+                        <p>Escanea el codigo</p>
                     </div>
                     <div className='box-qr'>
                         <img src={qr_code} alt='qrcode' />
